@@ -77,6 +77,11 @@ public class FripperController : MonoBehaviour
                     {
                         SetAngle(this.defaultAngle);
                     }
+
+                    if (myTouch.phase == TouchPhase.Ended && tag == "RightFripperTag")
+                    {
+                        SetAngle(this.defaultAngle);
+                    }
                 }
                 else if (Input.touches[i].position.x > Screen.width / 2)
                 {
@@ -86,6 +91,11 @@ public class FripperController : MonoBehaviour
                     }
 
                     if (myTouch.phase == TouchPhase.Ended && tag == "RightFripperTag")
+                    {
+                        SetAngle(this.defaultAngle);
+                    }
+
+                    if (myTouch.phase == TouchPhase.Ended && tag == "LeftFripperTag")
                     {
                         SetAngle(this.defaultAngle);
                     }
